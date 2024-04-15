@@ -10,25 +10,114 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+
+    @font-face {
+      font-family: Needed Font;
+      src: url(./assets/fonts/\/Inter-VariableFont_slnt\,wght.ttf);
+    }
+
+    .attribution { font-size: 11px; text-align: center; color: white; position: fixed; bottom: 10px;}
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    html {
+      font-family: "Needed Font", Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    body {
+      background-color: hsl(0, 0%, 8%);
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    main {
+      width: 20%;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 45px 30px 30px 30px;
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    main .info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info img {
+      width: 26%;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+
+    .info h1 {
+      color: white;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+
+    .info h4 {
+      color: yellow;
+      margin-top: 12px;
+      font-size: 1rem;
+    }
+
+    .info p {
+      color: rgb(206, 197, 197);
+    }
+
+    .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    .menu button {
+      width: 100%;
+      height: 50px;
+      background-color: hsl(0, 0%, 20%);
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+
   </style>
 </head>
 <body>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
+  <main>
+    <div class="info">
+      <img src="./assets/images/avatar-jessica.jpeg">
+      <h1>Jessica Randall</h1>
+      <h4>London, United Kingdom</h4>
+      <p>"Front-end developer and avid reader."</p>
+    </div>
+    <div class="menu">
+      <button>Github</button>
+      <button>Frontend Mentor</button>
+      <button>LinkedIn</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://fb.com/zairus.bermillo.9" target="_blank">Zairus V. Bermillo</a>.
   </div>
 </body>
 </html>
