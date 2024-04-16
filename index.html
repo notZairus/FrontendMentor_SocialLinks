@@ -89,11 +89,31 @@
       background-color: hsl(0, 0%, 20%);
       border: none;
       border-radius: 6px;
+    }
+
+    .menu button a {
+      text-decoration: none;
       color: white;
       font-size: 1.1rem;
       font-weight: 700;
     }
 
+    .menu button,
+    .menu button > a {
+      transition: all 0.15s;
+    }
+
+    .menu button:hover,
+    .menu button:hover > a{
+      color: black;
+      background-color: yellow;
+    }
+
+    @media screen and (max-width: 426px) {
+      main {
+        width: 80%;
+      }
+    }
 
   </style>
 </head>
@@ -107,11 +127,11 @@
       <p>"Front-end developer and avid reader."</p>
     </div>
     <div class="menu">
-      <button>Github</button>
-      <button>Frontend Mentor</button>
-      <button>LinkedIn</button>
-      <button>Twitter</button>
-      <button>Instagram</button>
+      <button><a href="https://github.com/notZairus" target="_blank">Github</a></button>
+      <button><a href="https://www.frontendmentor.io/profile/notZairus" target="_blank">Frontend Mentor</a></button>
+      <button><a href="https://fb.com/zairus.bermillo.9" target="_blank">LinkedIn</a></button>
+      <button><a href="https://fb.com/zairus.bermillo.9" target="_blank">Facebook</a></button>
+      <button><a href="https://www.instagram.com/zxirus" target="_blank">Instagram</a></button>
     </div>
   </main>
   
